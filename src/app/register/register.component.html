@@ -1,0 +1,11 @@
+<div class="auth-container">
+  <h1>Registration</h1>
+  <label>Username</label>
+  <input type="text" [(ngModel)]="newUser.username">
+  <label>Password</label>
+  <input type="password" [(ngModel)]="newUser.password">
+  <label>Confirm Password</label>
+  <input type="password" [(ngModel)]="password2">
+  <button type="submit" (click)="register()">Confirm</button>
+  <a routerLink="/login">Already have an account? Log in</a>
+</div>

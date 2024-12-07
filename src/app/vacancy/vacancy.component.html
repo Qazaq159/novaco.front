@@ -1,0 +1,10 @@
+<div class="vacancies-container">
+  <h1>Vacancies</h1>
+  <ul>
+    <li *ngFor="let vacancy of vacancies" class="vacancy-card">
+      <h4>Name: {{vacancy.name}}</h4>
+      <h4>Salary: {{vacancy.salary}}</h4>
+      <a routerLink="/vacancies/{{vacancy.id}}">View Details</a>
+    </li>
+  </ul>
+</div>

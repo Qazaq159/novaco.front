@@ -1,0 +1,14 @@
+<div class="home-container">
+  <h1>Search for Vacancies</h1>
+  <input type="text" [(ngModel)]="searchVacancy" placeholder="Enter vacancy name">
+  <button (click)="search()">Search</button>
+
+  <hr>
+  <ul class="vacancies-list">
+    <li *ngFor="let vacancy of vacancies" class="vacancy-card">
+      <h4>Name: {{vacancy.name}}</h4>
+      <h4>Salary: {{vacancy.salary}}</h4>
+      <a routerLink="/vacancies/{{vacancy.id}}">More...</a>
+    </li>
+  </ul>
+</div>

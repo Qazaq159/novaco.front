@@ -1,0 +1,9 @@
+<header class="header-container">
+  <div class="user-info">
+    <a *ngIf="isLogged" routerLink="/profile">{{ username }}</a>
+    <button *ngIf="isLogged" (click)="logOut()">Log Out</button>
+    <a *ngIf="!isLogged" routerLink="/login">Log in</a>
+    <a *ngIf="!isLogged" routerLink="/register">Create new account</a>
+    <a routerLink="/companies">Companies</a>
+  </div>
+</header>

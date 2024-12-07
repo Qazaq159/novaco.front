@@ -1,0 +1,12 @@
+<div class="auth-container">
+    <h1 *ngIf="!isLogged else another_content">Sign In</h1>
+    <label *ngIf="!isLogged">Username</label>
+    <input *ngIf="!isLogged" type="text" [(ngModel)]="newUser.username">
+    <label *ngIf="!isLogged">Password</label>
+    <input *ngIf="!isLogged" type="password" [(ngModel)]="newUser.password">
+    <button *ngIf="!isLogged" type="submit" (click)="login()">Enter</button>
+    <a *ngIf="!isLogged" routerLink="/register">Create new account</a>
+  <ng-template #another_content>
+    <span>You're logged in</span>
+  </ng-template>
+</div>

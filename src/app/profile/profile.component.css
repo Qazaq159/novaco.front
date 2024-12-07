@@ -1,0 +1,83 @@
+/* Home Component Styles */
+.home-container {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.user-info a, .home-container a {
+  color: #0078d7;
+  text-decoration: none;
+  margin: 0.5rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.user-info a:hover, .home-container a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #0078d7;
+  margin: 1.5rem 0;
+}
+
+input[type="text"] {
+  width: 80%;
+  max-width: 600px;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.vacancies-list {
+  list-style: none;
+  padding: 0;
+}
+
+.vacancy-card {
+  background: white;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: left;
+}
+
+.vacancy-card h4 {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.vacancy-card a {
+  color: #0078d7;
+  font-weight: bold;
+}
+
+.vacancy-card a:hover {
+  text-decoration: underline;
+}

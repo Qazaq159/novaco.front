@@ -1,0 +1,12 @@
+<div class="home-container">
+  <h1>My profile</h1>
+
+  <ul class="vacancies-list">
+    <li *ngFor="let respond of myResponds" class="vacancy-card">
+      <h4>Vacancy name : {{ respond.vacancy_name }}</h4>
+      <h4>Expecting salary: {{ respond.expecting_salary }}</h4>
+      <h4>Company : {{ respond.company }}</h4>
+      <h5><b>Respond time: <i>{{ respond.respond_at | customDate }}</i></b></h5>
+    </li>
+  </ul>
+</div>

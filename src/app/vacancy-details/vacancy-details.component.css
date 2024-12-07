@@ -1,0 +1,60 @@
+/* Vacancy Details Container */
+.vacancy-details-container {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.user-info {
+  align-self: flex-start;
+  margin-bottom: 1rem;
+}
+
+.user-info a, .vacancy-details-container a {
+  color: #0078d7;
+  text-decoration: none;
+  margin: 0.5rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.user-info a:hover, .vacancy-details-container a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #0078d7;
+  margin-bottom: 2rem;
+}
+
+.vacancy-info {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 100%;
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+.vacancy-info h4 {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
